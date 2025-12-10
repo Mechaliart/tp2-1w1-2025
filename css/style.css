@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-section {
-  height: 100vh;
-}
+
 html {
   scroll-behavior: smooth;
   font-size: 14px;
@@ -12,8 +10,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body > div{
+  min-height: 100vh;
+}
+/*=========================================================================ENTÊTE===============================================================================================*/
 .entete {
-  font-family: fantasy;
+  font-family: "Starborn";
   margin: 0 auto;
   position: sticky;
   color: rgb(226, 164, 255);
@@ -25,6 +28,7 @@ body {
 
 
 .entete__description {
+  
    align-items: center; 
   display: flex;
   flex-wrap: wrap;
@@ -45,11 +49,15 @@ body {
     font-size: 30px;
      
 }
+/*============================================================DESCRIPTION==========================================================================================*/
 .kirby__description {
   /*flex: 2 1 400px;*/
   flex-shrink: 1;
   flex-basis: 200px;
   flex-grow: 0;
+}
+.kirby__description h4{
+  font-size: 3rem;
 }
 .auteur__description {
   /*flex: 1 1 200px;*/
@@ -57,6 +65,7 @@ body {
   flex-basis: 200px;
   flex-grow: 0;
 }
+/*=================================================================BOUTON INSCRIPTION====================================================================*/
 .bouton__inscription {
   display: flex;
   margin: 0 auto;
@@ -81,9 +90,10 @@ body {
   
 
 }
+
 .centre {
-  /*max-width: 1100px;
-    margin: 0 auto;*/
+  /* max-width: 1100px;
+    margin: 0 auto; */
   background-color: rgb(255, 183, 219);
 }
 h1 {
@@ -97,28 +107,170 @@ h1 {
   background-repeat: no-repeat;
   border: 5px palevioletred solid;
   border-top: none;
-  font-size: 2rem;
+  font-size: 6rem;
  
 }
 .un h1{
-     font-family: fantasy;
+     font-family: "Spicy Sale", sans-serif;
   color: rgb(255, 164, 220);
   text-shadow: 3px 2px 1px rgb(243, 98, 160);
 }
 .deux {
   background-color: rgb(239, 221, 255);
+  
+}
+.deux h1{
+       font-family: "Spicy Sale", sans-serif;
+  color: rgb(255, 164, 220);
+  text-shadow: 3px 2px 1px rgb(243, 98, 160);
+  font-size: 5rem;
+  text-align: center;
+  border-bottom: 5px palevioletred;
+  background-color: #ffc3e8;
 }
 .trois {
   background-color: rgb(229, 222, 255);
 }
+.trois h1{
+    text-align: center;
+  border: double 15px #d957ad;
+  text-shadow: 5px 2px 1px rgb(107, 39, 81);
+  color: palevioletred;
+  text-align: center;
+  font-family: "Starborn";
+  font-size: 5rem;
+
+}
+
+/*==================================================================TABLEAU=============================================================================================*/
+.tableau {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  
+  border-radius: 20px;
+  
+ 
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+.tableau thead {
+  background: rgb(255, 222, 255);
+  border-radius: 30px;
+}
+
+.tableau th {
+  padding: 15px;
+  font-size: 1.3rem;
+  color: #d957ad;
+  text-align: center;
+  border-bottom: 3px dashed rgb(255, 168, 216);
+  text-shadow: 1px 1px 1px white;
+}
+
+
+.tableau td {
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #a3588d;
+  border-bottom: 2px dashed rgba(255, 170, 220, 0.3);
+}
+
+
+.tableau tbody tr:nth-child(odd) {
+  background-color: rgba(255, 240, 255, 0.7);
+}
+
+.tableau tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.tableau tbody tr:hover {
+  background-color: #ffc3e8;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  color: #fff;
+}
+
+
+.tableau tfoot {
+  background: rgb(255, 224, 234);
+  font-weight: bold;
+}
+
+.tableau caption {
+  caption-side: top;
+  padding: 15px;
+  font-size: 2rem;
+  font-family: "Starborn";
+  color: #ff8ad5;
+  text-shadow: 3px 2px 1px rgb(243, 98, 160);
+}
 .quatre {
+  min-height: 100vh;
+  flex-shrink: 1;
+  flex-basis: 300px;
+  flex-shrink: 0;
 }
 .quatre h1 {
   background-color: rgb(255, 253, 200);
+  width:800px;
+  padding: 30px;
+  border-radius: 50px;
+  text-align: center;
+  border: double 15px #d957ad;
+  text-shadow: px 2px 1px rgb(107, 39, 81);
   color: palevioletred;
   text-align: center;
+  font-family: "Starborn";
+  font-size: 5rem;
 }
-/*/////////////////////////////////////////////////////////chk-burger///////////////////////////////////////////////////////////////////*/
+/*============================================principal article==========================================*/
+.principal__article{
+    flex: 1 0 300px;
+    min-width: 260px;
+    background-color: rgba(240, 255, 255, 0.469);
+    border-radius:20px;
+    margin: 3px;
+    padding: 10px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 3px dashed palevioletred;
+}
+ .principal__img:hover{
+  scale: 1.0;
+  transform: scale(1.05); 
+   transition: transform 1s;
+   box-shadow: 0 0 10px 3px white;
+
+}
+.principal__section{
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.principal__figure {
+    margin: 0;
+    padding: 0;
+    /* height: 50vh; */
+   
+}
+.principal__img {
+  
+  display: block;
+  max-width: 100%;  /* image never exceeds article width */
+  height: auto;
+}
+
+/*========================================================================chk-burger=====================================================================*/
 
 #chk-burger {
   margin: 0 auto;
@@ -136,9 +288,10 @@ h1 {
   font-size: 2rem;
   padding: 10px;
 }
+/*====================================================================Navigation==============================================================================*/
 .navigation{
   position: fixed;
-  top: 100px;
+  top: 150px;
   right: 1px;
   transform: translateX(100%);
   transition: transform 1s;
@@ -154,7 +307,13 @@ h1 {
 
   opacity: 0.8;
 }*/
-
+.kirby__acceuil{
+  size: 1rem;
+}
+.kirby__acceuil:hover{
+         transform: scale(1rem);
+         transition: transform 1s;
+}
 #chk-burger:checked ~ .navigation {
   /*display: block; /*=======================faire afficher (cocher)============*/
   transform: translateX(0);
@@ -168,31 +327,106 @@ h1 {
 }
 .navigation a:hover {
   font-size: 3.2rem;
+   transform: rotate(30);
+   transition: tansform 1s;
 }
 /*///////////////////////////////////////////////////////=====formulaire======//////////////////////////////////////////////////////////////////////*/
 .formulaire {
-  border: 5px dashed pink;
-  border-radius: 15px;
+  margin: auto;
+  max-width: 600px;
+  padding: 40px;
+  background: rgb(255, 192, 240);
+  border: 5px dotted palevioletred;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Spicy Sale";
+  font-size: 2rem;
+  color: rgb(255, 118, 200);
+}
+
+.formulaire label {
+  font-family: "Chubby Relief", cursive;
+  font-size: 1.5rem;
+  text-align: center;
   padding: 20px;
 }
-.formulaire__label {
-  font-family: fantasy;
-  color: rgb(255, 145, 169);
-}
-.formulaire__input {
-  background-color: rgb(255, 220, 228);
-  border: 5px palevioletred;
-  border-radius: 30px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.formulaire__div {
-  margin: 20px 0;
+label{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  color: rgb(207, 109, 166); 
+  background-color: rgb(255, 220, 226); 
+  border: 5px palevioletred; 
+  border-radius: 30px; }
+
+input {
+  height: 50px;
+  text-align: center;
+  border-radius: 10px rgb(255, 183, 219);
+  border: none;
+  padding: 10px;
+  background: white;
 }
 
-
+input:focus {
+  outline: 3px solid rosybrown;
+}
+.formulaire__input { background-color: rgb(249, 255, 220); 
+  border: 5px double rgb(255, 124, 198); 
+  border-radius: 30px; 
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
 .navigation img:hover {
   transform: scale(1.12);
   box-shadow: 0 8px 18px rgba(130, 29, 170, 0.18);
 }
+/*=================================================================SECTION PIED=========================================================================================================*/
 
+.pied{
+  padding: 100px;
+      display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, rgb(235, 172, 219), rgb(254, 255, 184));
+    
+    
+}
+.pied__section{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    line-height: 1.5rem;
+   
+}
+.kirby{
+    height: 150px;
+    width: 200px;
+}
+.pied__figure{
+    margin-left: 0;
+    padding-left: 0;
+}
+.pied__icons{
+     width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  
+  
+  
+}
+.coordonnees{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 0;
+    font-size: smaller;
+}
+.pied__coordonnes{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}

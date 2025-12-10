@@ -1,0 +1,10 @@
+.video iframe{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 200px;
+}
+video{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

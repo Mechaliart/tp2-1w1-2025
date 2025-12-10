@@ -1,0 +1,23 @@
+/* Chubby Relief */
+@font-face {
+  font-family: "Chubby Relief";
+  src: url("../fonts/Chubby\ Relief.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Starborn */
+@font-face {
+  font-family: "Starborn";
+  src: url("../fonts/Starborn.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Spicy Sale */
+@font-face {
+  font-family: "Spicy Sale";
+  src: url("../fonts/Spicy\ Sale.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
