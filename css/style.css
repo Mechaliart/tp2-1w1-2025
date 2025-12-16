@@ -5,15 +5,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 14px;
+  cursor: url("../images/cursor.png"), auto;
 }
 body {
   margin: 0;
   padding: 0;
+  background-color: #ffc3e8;
 }
 
-body > div{
-  min-height: 100vh;
-}
 /*=========================================================================ENTÊTE===============================================================================================*/
 .entete {
   font-family: "Starborn";
@@ -26,13 +25,11 @@ body > div{
   border: 5px palevioletred dashed;
 }
 
-
 .entete__description {
-  
-   align-items: center; 
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-   flex-direction: column;
+  flex-direction: column;
   width: fit-content;
   height: fit-content;
   max-width: 1000px;
@@ -46,9 +43,13 @@ body > div{
   gap: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-size: 30px;
-     
+  font-size: 30px;
 }
+
+
+
+
+
 /*============================================================DESCRIPTION==========================================================================================*/
 .kirby__description {
   /*flex: 2 1 400px;*/
@@ -56,7 +57,7 @@ body > div{
   flex-basis: 200px;
   flex-grow: 0;
 }
-.kirby__description h4{
+.kirby__description h4 {
   font-size: 3rem;
 }
 .auteur__description {
@@ -82,19 +83,17 @@ body > div{
 }
 
 .bouton__inscription:hover {
-   opacity: 0.8;
+  opacity: 0.8;
 }
 
 .bouton__inscription a {
   text-decoration: none;
-  
-
 }
 
 .centre {
-  /* max-width: 1100px;
-    margin: 0 auto; */
-  background-color: rgb(255, 183, 219);
+   /* max-width: 1100px;
+    margin: 0 auto;  */
+  background-color: rgb(255, 220, 238);
 }
 h1 {
   margin: 0;
@@ -107,20 +106,21 @@ h1 {
   background-repeat: no-repeat;
   border: 5px palevioletred solid;
   border-top: none;
-  font-size: 6rem;
- 
+  
+  min-height: 100vh;
 }
-.un h1{
-     font-family: "Spicy Sale", sans-serif;
+.un h1 {
+  font-family: "Spicy Sale", sans-serif;
   color: rgb(255, 164, 220);
   text-shadow: 3px 2px 1px rgb(243, 98, 160);
+  font-size: clamp(3rem,6rem,6rem);
 }
 .deux {
   background-color: rgb(239, 221, 255);
-  
+  min-height: 100vh;
 }
-.deux h1{
-       font-family: "Spicy Sale", sans-serif;
+.deux h1 {
+  font-family: "Spicy Sale", sans-serif;
   color: rgb(255, 164, 220);
   text-shadow: 3px 2px 1px rgb(243, 98, 160);
   font-size: 5rem;
@@ -130,16 +130,26 @@ h1 {
 }
 .trois {
   background-color: rgb(229, 222, 255);
+  min-height: 100vh;
 }
-.trois h1{
-    text-align: center;
+.trois h1 {
+  text-align: center;
   border: double 15px #d957ad;
   text-shadow: 5px 2px 1px rgb(107, 39, 81);
   color: palevioletred;
   text-align: center;
   font-family: "Starborn";
   font-size: 5rem;
-
+}
+.cinq {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: #9e4681 dashed 10px;
+  align-content: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 /*==================================================================TABLEAU=============================================================================================*/
@@ -149,14 +159,11 @@ h1 {
   align-content: center;
   flex-direction: column;
   width: 100%;
-  height: 600px;
-  
+
   border-radius: 20px;
-  
- 
+
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
-
 
 .tableau thead {
   background: rgb(255, 222, 255);
@@ -164,7 +171,7 @@ h1 {
 }
 
 .tableau th {
-  padding: 15px;
+  padding: 30px;
   font-size: 1.3rem;
   color: #d957ad;
   text-align: center;
@@ -172,15 +179,13 @@ h1 {
   text-shadow: 1px 1px 1px white;
 }
 
-
 .tableau td {
-  padding: 12px;
+  padding: 30px;
   font-size: 1.1rem;
   text-align: center;
   color: #a3588d;
   border-bottom: 2px dashed rgba(255, 170, 220, 0.3);
 }
-
 
 .tableau tbody tr:nth-child(odd) {
   background-color: rgba(255, 240, 255, 0.7);
@@ -190,14 +195,12 @@ h1 {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-
 .tableau tbody tr:hover {
   background-color: #ffc3e8;
   transform: scale(1.02);
   transition: transform 0.3s;
   color: #fff;
 }
-
 
 .tableau tfoot {
   background: rgb(255, 224, 234);
@@ -206,22 +209,25 @@ h1 {
 
 .tableau caption {
   caption-side: top;
-  padding: 15px;
+  padding: 50px;
   font-size: 2rem;
   font-family: "Starborn";
   color: #ff8ad5;
   text-shadow: 3px 2px 1px rgb(243, 98, 160);
 }
 .quatre {
-  min-height: 100vh;
-  flex-shrink: 1;
+  
+  height: 100vh;
+   min-height: 100vh; 
+   flex-shrink: 1;
   flex-basis: 300px;
-  flex-shrink: 0;
+  flex-shrink: 0; 
 }
 .quatre h1 {
+  
   background-color: rgb(255, 253, 200);
-  width:800px;
-  padding: 30px;
+  
+  
   border-radius: 50px;
   text-align: center;
   border: double 15px #d957ad;
@@ -229,45 +235,48 @@ h1 {
   color: palevioletred;
   text-align: center;
   font-family: "Starborn";
-  font-size: 5rem;
+  font-size: clamp(1.8rem, 4rem, 4rem);
 }
 /*============================================principal article==========================================*/
-.principal__article{
-    flex: 1 0 300px;
-    min-width: 260px;
-    background-color: rgba(240, 255, 255, 0.469);
-    border-radius:20px;
-    margin: 3px;
-    padding: 10px;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 3px dashed palevioletred;
-}
- .principal__img:hover{
-  scale: 1.0;
-  transform: scale(1.05); 
-   transition: transform 1s;
-   box-shadow: 0 0 10px 3px white;
+.principal__article {
+  flex: 1 0 300px;
+  min-width: 260px;
+  background-color: rgba(240, 255, 255, 0.469);
+  border-radius: 20px;
+  margin: 3px;
+  padding: 10px;
 
-}
-.principal__section{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 3px dashed palevioletred; 
   
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+}
+.principal__article p{
+  font-family: "Starborn";
+  color: #9e4681;
+}
+.principal__img:hover {
+  scale: 1;
+  transform: scale(1.05);
+ 
+  box-shadow: 0 0 10px 3px white;
+}
+.principal__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .principal__figure {
-    margin: 0;
-    padding: 0;
-    /* height: 50vh; */
-   
+  margin: 0;
+  padding: 0;
+  /* height: 50vh; */
 }
 .principal__img {
-  
   display: block;
-  max-width: 100%;  /* image never exceeds article width */
+  max-width: 100%; /* image never exceeds article width */
   height: auto;
+  transition: transform 1s;
 }
 
 /*========================================================================chk-burger=====================================================================*/
@@ -281,7 +290,7 @@ h1 {
   right: 50px;*/
   background-color: rgb(236, 215, 255);
   border: 5px dotted palevioletred;
- border-radius: 15px;
+  border-radius: 15px;
   width: 300px;
   height: 300px;
   /* 2 rem = 2 x 14 px*/
@@ -289,7 +298,7 @@ h1 {
   padding: 10px;
 }
 /*====================================================================Navigation==============================================================================*/
-.navigation{
+.navigation {
   position: fixed;
   top: 150px;
   right: 1px;
@@ -303,19 +312,10 @@ h1 {
   right: 10px;
 }
 
-/*.navigation__bouton:hover {
 
-  opacity: 0.8;
-}*/
-.kirby__acceuil{
-  size: 1rem;
-}
-.kirby__acceuil:hover{
-         transform: scale(1rem);
-         transition: transform 1s;
-}
+
 #chk-burger:checked ~ .navigation {
-  /*display: block; /*=======================faire afficher (cocher)============*/
+  
   transform: translateX(0);
 }
 .navigation a {
@@ -326,9 +326,8 @@ h1 {
   font-family: fantasy;
 }
 .navigation a:hover {
-  font-size: 3.2rem;
-   transform: rotate(30);
-   transition: tansform 1s;
+  color: #ffabe0;
+ 
 }
 /*///////////////////////////////////////////////////////=====formulaire======//////////////////////////////////////////////////////////////////////*/
 .formulaire {
@@ -352,11 +351,14 @@ h1 {
   text-align: center;
   padding: 20px;
 }
-label{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  color: rgb(207, 109, 166); 
-  background-color: rgb(255, 220, 226); 
-  border: 5px palevioletred; 
-  border-radius: 30px; }
+label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(207, 109, 166);
+  background-color: rgb(255, 220, 226);
+  border: 5px palevioletred;
+  border-radius: 30px;
+}
 
 input {
   height: 50px;
@@ -370,63 +372,217 @@ input {
 input:focus {
   outline: 3px solid rosybrown;
 }
-.formulaire__input { background-color: rgb(249, 255, 220); 
-  border: 5px double rgb(255, 124, 198); 
-  border-radius: 30px; 
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+.formulaire__input {
+  background-color: rgb(249, 255, 220);
+  border: 5px double rgb(255, 124, 198);
+  border-radius: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 .navigation img:hover {
   transform: scale(1.12);
   box-shadow: 0 8px 18px rgba(130, 29, 170, 0.18);
 }
+.formulaire__div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+/*==========================================================GALÉRIE============================================================================================*/
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.galerie__titre {
+  color: white;
+}
+
+.galerie__figure {
+  flex-grow: 0; /* flex grow 1 fait depasser le flex-basis */
+  flex-shrink: 0;
+  flex-basis: 230px;
+  transform: rotate(-10deg);
+
+  filter: blur(0.7px) brightness(0.78) contrast(1.06) grayscale(0.3);
+
+  transition: filter 1s, transform 1s cubic-bezier(0.02, 0.65, 0.66, 0.96);
+}
+
+.galerie__img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+.galerie__figcaption {
+  font-family: "Chubby Relief";
+  color: #9e4681;
+}
+
+.galerie__figure:nth-of-type(odd) {
+  transform: rotate(10deg);
+}
+
+.galerie__figure:hover {
+  filter: none;
+  transform: scale(2) rotate(0deg);
+}
+/*=============================================================================================SECTION ARTICLE====================================================================== /
+
+/* Conteneur principal */
+.article {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.article__titre {
+  font-family: "Starborn", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(255, 118, 200);
+}
+
+.article__div {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.article__figure {
+  font-family: "Spicy Sale", sans-serif;
+  color: rgb(207, 109, 166);
+  border: solid 5px rgb(180, 77, 120);
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px rgba(99, 29, 84, 0.267);
+    transition: transform 0.5s; /*mettre la transition dans l'état initial du transform*/
+}
+
+.article__figure:hover {
+  transform: scale(1.1); /*transform*/
+
+}
+.article,
+img {
+  border-radius: 50px;
+}
+
+.article:nth-of-type(odd) .article__figure {
+  order: -1;
+}
+.article:nth-of-type(even) .article__figure {
+  order: 1;
+}
+
+.article__div h3 {
+  font-family: "Spicy Sale", sans-serif;
+  text-shadow: 0px -1px #9e4681;
+  color: #9e4681;
+  padding-top: 10px;
+  background-color: rgb(255, 239, 167);
+  padding: 15px;
+  border: 30px dotted rgb(255, 156, 197);
+}
+
+.article__div p {
+  background-color: rgba(255, 255, 255, 0.745);
+  padding: 30px;
+  border-radius: 50px;
+  font-size: 2rem;
+  border: #9e4681 solid 3px;
+  color: rgb(157, 67, 141);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article__img {
+  width: 300px;
+  height: 300px;
+}
+
+.article__figcaption {
+  background-color: white;
+  margin: -3px auto;
+  padding: 4px;
+  border-bottom: 3px solid rgb(104, 63, 82);
+}
 /*=================================================================SECTION PIED=========================================================================================================*/
 
-.pied{
+.pied {
   padding: 100px;
-      display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    background-image: linear-gradient(to bottom, rgb(235, 172, 219), rgb(254, 255, 184));
-    
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(235, 172, 219),
+    rgb(251, 255, 173)
+  );
 }
-.pied__section{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: azure;
-    line-height: 1.5rem;
-   
+.pied__section {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  color: azure;
+  line-height: 2rem;
 }
-.kirby{
-    height: 150px;
-    width: 200px;
+.pied__section,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+    padding: 30px;
+  background: rgb(255, 196, 235);
+  border-radius: 50px;
+
+  font-family: "Spicy Sale";
+  font-size: 2rem;
+  color: rgb(217, 98, 154);
 }
-.pied__figure{
-    margin-left: 0;
-    padding-left: 0;
+.pied__section a {
+  text-decoration: none;
+  color: rgb(143, 53, 135);
 }
-.pied__icons{
-     width: 100%;
+.kirby {
+  height: 150px;
+  width: 200px;
+}
+.pied__figure {
+  margin-left: 0;
+  padding-left: 0;
+}
+.pied__icons {
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
-  
-  
-  
 }
-.coordonnees{
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 0;
-    font-size: smaller;
+.coordonnees {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 0;
+  font-size: 1.7rem;
 }
-.pied__coordonnes{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    padding: 20px;
+.pied__coordonnes {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 30px;
+  background: rgb(255, 196, 235);
+  border: 5px dotted palevioletred;
+  border-radius: 30px;
+
+  font-family: "Spicy Sale";
+  font-size: 2rem;
+  color: rgb(188, 70, 111);
 }

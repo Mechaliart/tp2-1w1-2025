@@ -1,10 +1,22 @@
 .video iframe{
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-basis: 200px;
 }
 video{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
+      
+}
+.video__div{
+  margin: 0;
+  padding: 45px;
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    border: 10px double rgb(255, 156, 197);
+    border-radius: 15px;
+    background-color: aliceblue;
 }

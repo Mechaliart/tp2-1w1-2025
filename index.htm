@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>avancement-tp2</title>
+    <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/recette.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="images/cute_burger.webp">
-    <link rel="stylesheet" href="images/kirby6.png">
-    <link rel="stylesheet" href="images/kirby_10.jpg">
-    <link rel="stylesheet" href="images/kirby_11.jpg">
-    <link rel="stylesheet" href="images/kirby_12.jpg">
-    <link rel="stylesheet" href="images/kirby_13.jpg">
-    <link rel="stylesheet" href="images/kirby_14.jpg">
-    <link rel="stylesheet" href="images/kirby_15.jpg">
-    <link rel="stylesheet" href="images/kirby_16.jpg">
-    <link rel="stylesheet" href="images/kirby_17.jpg">
+    
 </head>
 <body>
- 
+ <!--==================================entête==========================================-->  
     <header class="entete centre">
         <h1>Kirby<img src="images/kirby7.png" alt="kirby7" width="50" height="50" ></h1>
          <label for="chk-burger" class="navigation__bouton"><img src="images/cute_burger.webp" width="100" height="100"></label> 
    <input type="checkbox" name="" id="chk-burger">
     <nav class="navigation">
-      <a href="#un">À propos</a>
+      <a href="#un">À propos</a>  
+      <a href="#recette">Recettes</a> 
+      <a href="#quatre">Images</a>
         <a href="#inscription">Inscription</a>
-        <a href="#trois">trois</a>
-        <a href="#quatre">quatre</a>
-        <a href="#cinq">cinq</a>
+        <a href="#trois">Tableau d'Aliments</a>
+        <a href="#cinq">vidéos</a>
+      
+        <a href="#galerie">Galerie</a>
+        <a href="#articles">ARTICLE KIRBY</a>
         
     </nav>
-    
-   </header>
-    
+    <nav class="home__bouton">
+    <a href="#" class="bouton__home"><img src="https://s2.svgbox.net/hero-solid.svg?ic=home&color=980" width="50" height="50"></a>
+   </nav>
+  </header>
+  
+   <!--=================================hero page==========================================-->  
+  <div>
 <section id="un" class="un centre">
             <h1>LES ALIMENTS DE KIRBY</h1>
             
@@ -59,9 +61,239 @@
                 
             
     </section>
-    
+    </div> 
+    <!-- /////////////==================== Recettes ====================================== -->
+<div class="global">
+  <section class="centre" id="recette">
+    <h1>Recettes indiennes</h1>
+    <article class="recette">
+      <div class="recette__div">
+        <h2>Ingrédients</h2>
+        <ol>
+          <li>500 g d'épinards frais (ou 300 g d'épinards surgelés)</li>
+          <li>1 oignon moyen émincé</li>
+          <li>2 gousses d'ail hachées</li>
+          <li>1 petit morceau de gingembre (1 c. à café râpé)</li>
+          <li>2 c. à soupe d'huile (ou ghee)</li>
+          <li>
+            1 tomate coupée en dés (ou 3 c. à soupe de tomates concassées)
+          </li>
+          <li>1 c. à café de curry en poudre</li>
+          <li>½ c. à café de curcuma</li>
+          <li>½ c. à café de cumin moulu</li>
+          <li>½ c. à café de coriandre moulue</li>
+          <li>Une pincée de piment (facultatif)</li>
+          <li>100 ml de lait de coco ou 2 c. à soupe de crème</li>
+          <li>Sel, poivre</li>
+          <li>Un peu de jus de citron (optionnel)</li>
+        </ol>
+      </div>
+      <div class="recette__div">
+        <h2>Préparation</h2>
+        <ol>
+          <li>
+            <strong>Préparer les épinards</strong> - Rince les épinards, enlève
+            les grosses tiges et hache-les légèrement. Si tu utilises des
+            épinards surgelés, fais-les simplement décongeler.
+          </li>
+          <li>
+            <strong>Faire revenir la base aromatique</strong> - Dans une poêle,
+            chauffe l'huile. Ajoute l'oignon et fais-le revenir jusqu'à ce qu'il
+            soit doré. Incorpore l'ail et le gingembre, cuis 1 minute.
+          </li>
+          <li>
+            <strong>Ajouter les épices</strong> Ajoute le curry, le curcuma, le
+            cumin, la coriandre et le piment. Fais griller les épices 30
+            secondes pour libérer les arômes.
+          </li>
+          <li>
+            <strong>Ajouter tomates et épinards</strong> - Mets les tomates et
+            cuis 2 minutes. Ajoute les épinards, mélange et laisse cuire 5
+            minutes.
+          </li>
+          <li>
+            <strong>Crémer le curry</strong> - Verse le lait de coco ou la
+            crème. Laisse réduire à feu doux 3 à 5 minutes. Ajuste le sel, le
+            poivre et ajoute un filet de jus de citron si tu veux un goût plus
+            frais.
+          </li>
+        </ol>
+      </div>
+      <div class="recette__image">
+        <figure class="recette__figure">
+          <img src="images/epinards-indien.webp" alt="epinards-indien" class="recette__img" />
+          <figcaption class="recette__figcaption">
+            Épinards à l'indienne
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+    <article class="recette">
+      <div class="recette__div">
+        <h2>Ingrédients</h2>
+        <h3>Base aux épinards</h3>
+        <ol>
+          <li>500 g d'épinards frais (ou 300 g surgelés)</li>
+          <li>1 oignon moyen, haché finement</li>
+          <li>2 gousses d'ail, hachées</li>
+          <li>1 c. à café de gingembre frais râpé</li>
+          <li>2 c. à soupe d'huile ou de ghee</li>
+          <li>1 tomate moyenne (ou 3 c. à soupe de tomates concassées)</li>
+          <li>1 c. à café de cumin moulu</li>
+          <li>1 c. à café de coriandre moulue</li>
+          <li>½ c. à café de curcuma</li>
+          <li>1 c. à café de garam masala</li>
+          <li>½ c. à café de piment (facultatif)</li>
+          <li>Sel au goût</li>
+        </ol>
+        <h3>Fromage</h3>
+        <ol>
+          <li>200 à 250 g de paneer (ou halloumi doux en remplacement)</li>
+          <li>
+            2 à 3 c. à soupe de crème (ou lait de coco pour version sans
+            produits laitiers)
+          </li>
+        </ol>
+      </div>
+      <div class="recette__div">
+        <h2>Préparation</h2>
+        <ol>
+          <li>Blanchir les épinards (clé pour la couleur)</li>
+          <li>Porte une casserole d'eau à ébullition.</li>
+          <li>Ajoute les épinards 30 à 45 secondes.</li>
+          <li>Égoutte-les et plonge-les immédiatement dans de l'eau froide.</li>
+          <li>Mixe-les pour obtenir une purée lisse.</li>
+          <li>Préparer le paneer</li>
+          <li>Coupe le paneer en cubes.</li>
+          <li>
+            Optionnel mais traditionnel : fais-les dorer légèrement dans un peu
+            d'huile. Réserve.
+          </li>
+          <li>Base aromatique</li>
+          <li>Dans une poêle, chauffe l'huile ou le ghee.</li>
+          <li>
+            Ajoute l'oignon, fais-le revenir jusqu'à ce qu'il soit bien doré.
+          </li>
+          <li>Ajoute ail et gingembre, cuis 1 minute.</li>
+          <li>Épices et tomate</li>
+          <li>Incorpore cumin, coriandre, curcuma, piment.</li>
+          <li>
+            Ajoute la tomate et laisse cuire jusqu'à obtenir une pâte épaisse.
+          </li>
+          <li>Assemblage</li>
+          <li>Verse la purée d'épinards.</li>
+          <li>Laisse mijoter 5 minutes à feu doux.</li>
+          <li>Ajoute le paneer et la crème.</li>
+          <li>Termine avec le garam masala.</li>
+          <li>Ajuste le sel.</li>
+        </ol>
+      </div>
+      <div class="recette__image">
+        <figure class="recette__figure">
+          <img class="recette__img" src="images/palak-paner.jpg" alt="palak-paner" />
+          <figcaption class="recette__figcaption">Palak paneer</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+</div>
 
-<!--========================================================trois////////////////////////////==========================================-->
+
+
+ <!--==================================images==========================================-->  
+
+    <section id="quatre" class="quatre centre">
+     <h1>Images</h1>
+    <a href="#"><img src="images/kirby6.png" alt="kirby6" height="150" width="150" class="kirby__acceuil"></a>
+         <section class="principal__section">
+                          
+                
+                       <div class="principal__section">
+                          
+                
+                          <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_10.jpg" class="principal__img" alt="kirby_10">
+                    <p class="principal__p">Kirby et le croissant salé. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                                <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_11.jpg" class="principal__img" alt="kirby_11">
+                    <p class="principal__p">Kirby en train de manger des frites. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                                <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_12.jpg" class="principal__img" alt="kirby_12">
+                    <p class="principal__p">Kirby et un géant burger. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                                <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_13.jpg" class="principal__img" alt="kirby_13">
+                    <p class="principal__p">Kirby et un sandwich bien chaud. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                                <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_14.jpg" class="principal__img" alt="kirby_14">
+                    <p class="principal__p">Kirby sur des pancakes avec un sirop. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                                <article class="principal__article">
+                    <h3 class="principal__h3">KIRBY</h3>
+                    <img src="images/kirby_15.jpg" class="principal__img" alt="kirby_15">
+                    <p class="principal__p">Kirby et un flanc très bon. </p>
+                    <p class="principal__date">18 mars 2004</p>
+                           </article>
+                  
+                      
+                       </div>
+                          </section>
+                         
+                
+  
+                       
+<!--==================================formulaire inscription==========================================-->
+<section id="inscription" class="deux centre"> 
+  <h1>Inscription</h1>
+
+  <a href="#">
+    <img src="images/kirby6.png" alt="kirby6" height="150" width="150">
+  </a>
+
+  <form class="formulaire">
+
+    <div class="formulaire__div">
+      <label for="txtNom">♥ Nom :</label>
+      <input type="text" id="txtNom" class="formulaire__input" placeholder="Entrez votre nom">
+    </div>
+
+    <div class="formulaire__div">
+      <label for="txtPrenom">♥ Prénom :</label>
+      <input type="text" id="txtPrenom" class="formulaire__input" placeholder="Entrez votre prénom">
+    </div>
+
+    <div class="formulaire__div">
+      <label for="txtCourriel">♥ Courriel :</label>
+      <input type="email" id="txtCourriel" class="formulaire__input" placeholder="Entrez votre courriel">
+    </div>
+
+    <div class="formulaire__div">
+      <p>Sélectionner le type de forfait</p>
+      <label><input type="radio" name="radForfait"> Forfait 1</label>
+      <label><input type="radio" name="radForfait"> Forfait 2</label>
+      <label><input type="radio" name="radForfait"> Forfait 3</label>
+    </div>
+
+    <input type="submit" value="Valider">
+
+  </form>
+</section>
+
+   
+    <!--========================================================tableau==========================================-->
     
 <section id="trois" class="trois centre">
         <h1>Tableau d'aliments</h1>
@@ -76,8 +308,8 @@
       <th>troisieme</th>
       <th>quatrième</th>
       <th>cinqième</th>
-      <th>sixième</th>
-      <th>septième</th>
+      <!-- <th>sixième</th>
+      <th>septième</th> -->
     </tr>
   </thead>
   <tbody>
@@ -88,8 +320,8 @@
       <td>fraise</td>
       <td>orange</td>
       <td>kiwi</td>
-      <td>ananas</td>
-      <td>Raisin</td>
+      <!-- <td>ananas</td>
+      <td>Raisin</td> -->
     </tr>
     <tr>
       <td>Pouvoirs</td>
@@ -98,8 +330,8 @@
       <td>foudre</td>
       <td>épée</td>
       <td>Tornade</td>
-      <td>Trancheur</td>
-      <td>épée</td>
+      <!-- <td>Trancheur</td>
+      <td>épée</td> -->
     </tr>
     <tr>
       <td>Couleurs</td>
@@ -108,8 +340,8 @@
       <td>rouge</td>
       <td>bleu</td>
       <td>vert</td>
-      <td>jaune</td>
-      <td>mauve</td>
+      <!-- <td>jaune</td>
+      <td>mauve</td> -->
     </tr>
     <tr>
       <td>Physique</td>
@@ -118,8 +350,8 @@
       <td>éitrement</td>
       <td>vol</td>
       <td>aspiration</td>
-      <td>dilatation</td>
-      <td>propulsion</td>
+      <!-- <td>dilatation</td>
+      <td>propulsion</td> -->
     </tr>
         <tr>
       <td>aliments purs</td>
@@ -128,8 +360,8 @@
       <td>fraise</td>
       <td>orange</td>
       <td>kiwi</td>
-      <td>ananas</td>
-      <td>Raisin</td>
+      <!-- <td>ananas</td>
+      <td>Raisin</td> -->
     </tr>
     <tr>
       <td>Pouvoirs</td>
@@ -138,8 +370,8 @@
       <td>foudre</td>
       <td>épée</td>
       <td>Tornade</td>
-      <td>Trancheur</td>
-      <td>épée</td>
+      <!-- <td>Trancheur</td>
+      <td>épée</td> -->
     </tr>
     <tr>
       <td>Couleurs</td>
@@ -148,8 +380,8 @@
       <td>rouge</td>
       <td>bleu</td>
       <td>vert</td>
-      <td>jaune</td>
-      <td>mauve</td>
+      <!-- <td>jaune</td>
+      <td>mauve</td> -->
     </tr>
     <tr>
       <td>Physique</td>
@@ -158,8 +390,8 @@
       <td>éitrement</td>
       <td>vol</td>
       <td>aspiration</td>
-      <td>dilatation</td>
-      <td>propulsion</td>
+      <!-- <td>dilatation</td>
+      <td>propulsion</td> -->
     </tr>
         <tr>
       <td>aliments purs</td>
@@ -168,8 +400,8 @@
       <td>fraise</td>
       <td>orange</td>
       <td>kiwi</td>
-      <td>ananas</td>
-      <td>Raisin</td>
+      <!-- <td>ananas</td>
+      <td>Raisin</td> -->
     </tr>
     <tr>
       <td>Pouvoirs</td>
@@ -178,161 +410,216 @@
       <td>foudre</td>
       <td>épée</td>
       <td>Tornade</td>
-      <td>Trancheur</td>
-      <td>épée</td>
+      <!-- <td>Trancheur</td>
+      <td>épée</td> -->
     </tr>
-    <tr>
-      <td>Couleurs</td>
-      <td>Rose</td>
-      <td>orange</td>
-      <td>rouge</td>
-      <td>bleu</td>
-      <td>vert</td>
-      <td>jaune</td>
-      <td>mauve</td>
-    </tr>
-    <tr>
-      <td>Physique</td>
-      <td>Gonflement</td>
-      <td>écrasement</td>
-      <td>éitrement</td>
-      <td>vol</td>
-      <td>aspiration</td>
-      <td>dilatation</td>
-      <td>propulsion</td>
-    </tr>
+   
+  
  
   </tbody>
 </table>
     </div>
     </section>
-   
+    <!--=====================================================vidéo==============================================-->
 
-  
-<!--==================================///////////////////////////////////quatre////////////////////////////==========================================-->  
-<div> 
-    <section id="quatre" class="quatre centre">
-     <h1>Galerie</h1>
-    <a href="#"><img src="images/kirby6.png" alt="kirby6" height="150" width="150" class="kirby__acceuil"></a>
-         <section class="principal__section">
-                          
-                
-                       <div class="principal__section">
-                          
-                
-                          <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_10.jpg" class="principal__img" alt="kirby_10">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                                <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_11.jpg" class="principal__img" alt="kirby_11">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                                <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_12.jpg" class="principal__img" alt="kirby_12">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                                <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_13.jpg" class="principal__img" alt="kirby_13">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                                <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_14.jpg" class="principal__img" alt="kirby_14">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                                <article class="principal__article">
-                    <h3 class="principal__h3">Article</h3>
-                    <img src="images/kirby_15.jpg" class="principal__img" alt="kirby_15">
-                    <p class="principal__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <p class="principal__date">17 decembre 2025</p>
-                           </article>
-                  
-                      
-                       </div>
-                          </section>
-                        </div>                          
-<!--==================================///////////////////////////////////formulaire inscription////////////////////////////==========================================-->
-
-
-    <section id="inscription" class="deux centre"> 
-        <h1>Inscription</h1>
+      <section id="cinq" class="cinq centre"> 
         <a href="#"><img src="images/kirby6.png" alt="kirby6" height="150" width="150" class="kirby__acceuil"></a>
-          <form class="formulaire">
-        <div class="fromulaire__div">
-        <label class="formulaire__label" for="txtNom">♥ Nom :</label>
-        <input type="text" id="txtNom" class="formulaire__input" placeholder="Entrez votre nom">
-    </div>
-    <div class="fromulaire__div"></div>
-         <label class="formulaire__label" for="txtPrenom">♥ Prénom :</label>
-        <input type="text" id="txtPrenom" class="formulaire__input" placeholder="Entrez votre prénom">
-    </div>
-    <div class="fromulaire__div"></div>
-         <label class="formulaire__label" for="txtCourriel">♥ Courriel :</label>
-        <input type="email" id="txtCourriel" class="formulaire__input" placeholder="Entrez votre courriel">
-    </div>
-    <div class="fromulaire__div"></div>
-        <p>Sélectionner le type de forfait</p>
-        <label for="radForfait_1">Forfait 1</label><input type="radio" name="radForfait" id="radForfait_1">
-        <label for="radForfait_2">Forfait 2</label><input type="radio" name="radForfait" id="radForfait_2">
-        <label for="radForfait_3">Forfait 3</label><input type="radio" name="radForfait" id="radForfait_3">
-    </div>
-    <input type="submit" value="valider">
-    </form>
-    </section> 
-    <!--///////////////////////////////////////////////////////////vidéo////////////////////////////////////////////////////-->
-        <section id="cinq" class="cinq centre"> 
-        <h1>vidéo</h1>
+    <h1>videos</h1>
+    
+<div class="video__div">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/eWkgDjZkG6E?si=d4KkazYUJG84LxPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="video__div">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qhYd5g7-Q_8?si=oN2jjItq3d6N2Sy9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video__div">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/51Lgl1-hvFs?si=j31PBdMGxicYpwzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+</div>
 
-    </section> 
-    <!--////////////////////////////////////////////////////////////////////////footer////////////////////////////////////////////////////////////////////////////-->
+        
+  <!--=========================================Galérie========================================================================-->                       
+                        
+      <div class="principal__galerie">                 
+    <section class="galerie centre" id="galerie">
+      <h1 class="galerie__titre">Galerie</h1>
+      <a href="#"><img src="images/kirby6.png" alt="kirby6" height="150" width="150" class="kirby__acceuil"></a>
+      <figure class="galerie">
+        <figure class="galerie__figure">
+          <img src="images/kirby_28.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby noodles</figcaption>
+        </figure>
+ 
+ 
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_17.jpg" alt="kirby17" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby breakfast</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_18.jpg" alt="kirby18" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby chocolat</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_19.jpg" alt="kirby19" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby flanc</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_20.jpg" alt="kirby20" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby angel donut</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_21.jpg" alt="kirby21" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby dumpling</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_22.jpg" alt="kirby22" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby legumes et fruis</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_23.jpg" alt="kirby23" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby Pie</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_24.jpg" alt="kirby24" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby Biscuits poisson</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_25.jpg" alt="kirby25" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby cookies</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_26.jpg" alt="kirby26" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby Pocky</figcaption>
+        </figure>
+ 
+        <figure class="galerie__figure">
+          <img src="images/kirby_27.jpg" alt="kirby27" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kirby onigiri</figcaption>
+        </figure>
+      </figure>
+    </section>
+ </div> 
+  <!--=============================================article======================================================================-->
+ 
+    <section class="centre" id="articles">
+      <h1 class="article__titre">ARTICLE KIRBY</h1>
+      <a href="#"><img src="images/kirby6.png" alt="kirby6" height="150" width="150" class="kirby__acceuil"></a>
+      <article class="article">
+        <div class="article__div">
+          <h3>Kirby qui mange des nouilles</h3>
+          <p>Lorsque Kirby mange des nouilles, il recharge efficacement son énergie après des combats ou de longues aventures.
+             Les nouilles sont riches en glucides, ce qui lui permet de retrouver rapidement sa vitalité et de maintenir sa force. En plus
+              d’être nourrissantes, elles sont souvent servies chaudes, ce qui apporte à Kirby une sensation de réconfort et de bien-être. 
+              Ce moment de repas l’aide aussi à se calmer, à se concentrer et à se préparer mentalement pour les défis à venir. Ainsi,
+             les nouilles soutiennent autant son corps que son esprit.</p>
+ 
+        </div>
+        <figure class="article__figure">
+          <img class="article__img" src="images/kirby_28.jpg" alt="">
+          <figcaption class="article__figcaption">KIRBY NOODLES</figcaption>
+        </figure>
+      </article>
+ 
+ 
+      <article class="article">
+        <div class="article__div">
+          <h3>Kirby qui mange une tarte</h3>
+          <p>Quand Kirby mange une tarte, il ne se nourrit pas seulement physiquement, mais aussi émotionnellement. La tarte, souvent composée de fruits
+             et d’une pâte savoureuse, lui apporte de l’énergie grâce aux sucres naturels et aux ingrédients nourrissants. 
+             Ce dessert lui procure un grand plaisir, ce qui renforce sa bonne humeur et son optimisme. En prenant le temps de savourer une tarte,
+              Kirby peut se détendre après une journée difficile et retrouver sa motivation.
+             Cette gourmandise joue donc un rôle important dans son équilibre et son bonheur.</p>
+ 
+        </div>
+        <figure class="article__figure">
+          <img class="article__img" src="images/Kirby! (nt mine!) ˚˖𓍢ִ໋🌷͙֒✧˚_🎀༘⋆.jpg" alt="">
+          <figcaption class="article__figcaption">KIRBY EATING A PIE</figcaption>
+        </figure>
+      </article>
+ 
+      <article class="article">
+        <div class="article__div">
+          <h3>Kirby qui mange des onigiris</h3>
+          <p>Les onigiri sont un excellent choix pour Kirby, car ils constituent un repas simple, pratique et équilibré. Le riz qu’ils contiennent 
+            lui fournit une énergie stable et durable, idéale pour soutenir ses efforts sur le long terme. Selon la garniture, les onigiri peuvent aussi
+             apporter des nutriments supplémentaires qui renforcent sa santé. Faciles à transporter et à manger, ils sont parfaits pour les pauses rapides 
+             pendant ses voyages. 
+            Grâce aux onigiri, Kirby peut rester fort, endurant et prêt à continuer son aventure sans s’arrêter trop longtemps.</p>
+ 
+        </div>
+        <figure class="article__figure">
+          <img class="article__img" src="images/kirby_27.jpg" alt="">
+          <figcaption class="article__figcaption">KIRBY ONIGIRI</figcaption>
+        </figure>
+      </article>
+      <article class="article">
+        <div class="article__div">
+          <h3>Kirby qui mange des Pocky</h3>
+          <p>Lorsque Kirby mange des Pocky, il profite d’une collation légère qui ajoute une touche de plaisir à sa journée.
+             Ces biscuits sucrés lui donnent un petit regain d’énergie, idéal lors d’une courte pause entre deux actions. 
+             Leur côté amusant et croquant rend le moment encore plus agréable et aide Kirby à garder le sourire.
+              Même s’ils ne remplacent pas un vrai repas, les Pocky contribuent à son bien-être en lui offrant un instant de détente et de joie.
+             Cela l’aide à rester positif, enthousiaste et plein d’énergie.</p>
+ 
+        </div>
+        <figure class="article__figure">
+          <img class="article__img" src="images/kirby_26.jpg" alt="">
+          <figcaption class="article__figcaption">KIRBY POCKY</figcaption>
+        </figure>
+      </article>
+ 
+    </section>
+
+ 
+
+    <!--=============================================================footer===============================================================-->
     <footer class="centre pied">
             <section class="pied__section">
 
-              <h4>Liens</h4>
-              <a href="https://css-tricks.com/almanac/properties/f/flex" class="pied__link">css-tricks flex </a>
-              <a href="https://developer.mozilla.org/en-US" class="pied__link">MDN</a>
-              <a href="https://demo.agektmr.com/flexbox" class="pied__link" >flexbox please</a>
-              <a href="https://flexboxfroggy.com/#fr" class="pied__link">flexboxfroggy</a>
-              <a href="https://codingfantasy.com/games/flexboxadventure" class="pied__link">Jeu flexbox</a>
+              <h4>SITES DE KIRBY</h4>
+              <a href="https://kirby.nintendo.com" class="pied__link">KIRBY.NINTENDO</a>
+              <a href="https://kirby.fandom.com/wiki/Kirby" class="pied__link">KIRBY.FANDOM</a>
+              
              
              </section> 
             <section class="pied__section">
-                <h4>Adresse Collège de Maisonneuve</h4>
+                <h4>informations</h4>
                 <ul>
-                <li>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</li>
-                <li>Téléphone: 514-254-7131</li>
-                <li>Nombre d'étudiants 7000</li>
-                <li>Nombre de programmes offerts: 17</li>
+                <li>Pink Kirby</li>
+                <li>Telephone: kirby</li>
+                <li>EVERYTHING KIRBY</li>
+                <li>tmega04944@gmail.com</li>
                 </ul>
             </section>
             <section class="pied__section">
-                <h4>Services administratif</h4>
+                <h4>Services</h4>
                 <ul>
                 <li>Accueil et information</li>
-                <li>Inscription et admission</li>
-                <li>Scolarité</li>
-                <li>Bourses et aide financière</li>
-                <li>Services aux étudiants</li>
-                <li>Santé et bien-être</li>
-                <li>Placement et stages</li>
-                <li>Bibliothèque</li>
-                <li>Informatique et technologie</li>
+                <li>Les Aliments</li>
+                <li>Les consommations recommandees</li>
+                <li>puffy</li>
+                <li>Kirby and stars</li>
+                <li>Sante et bien-etre</li>
+               
                 </ul>
           </section>
           <section class="pied__section">
-                   <h4>Le collège de Maisonneuve</h4>
+                   <h4>KIRBY</h4>
           <figure class="pied__figure">
-            <img class="kirby" src="images/kirby3.jpg" alt="kirby" >
+            <img class="kirby" src="images/kirby_17.jpg" alt="kirby" >
             <figcaption>kirby</figcaption>
           </figure>
           </section>
@@ -341,27 +628,15 @@
            
           <section class="coordonnees">
           <section class="pied__coordonnes">
-                <h4>Coordonnées</h4>
+                <h4>Coordonnees</h4>
                 <ul>
                 <li>Auteur: Imane Mechali</li>
-                <li>Téléphone: 514-123-4567</li>
-                <li> Collège de maisonneuve</li>
-                <li>Session automne 2025</li>
                 
-                </ul>
-          </section>
-          
-           <section class="pied__coordonnes">
-                <h4>informations sur le cours</h4>
-                <ul>
-                <li>Programme : Technique d'intégration multémedia</li>
-                <li>cours: 1W1 Mise en page web</li>
-                <li>Enseigant : Eddy Martin</li>
-                <li>Email: emartin@cmaisonneuve.qc.ca</li>
-                <li>Site web : <a href="https://www.cmaisonneuve.qc.ca/">college-maisonneuve.qc.ca</a> </li>
                
                 </ul>
           </section>
+          
+          
           <section class="pied__icons">
             <img src="https://s2.svgbox.net/social.svg?ic=github&color=741b47" width="25" height="25">
             <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=a64d79" width="25" height="25">
@@ -373,6 +648,6 @@
 
        </div>
         </footer>
-<!--/////////////////////////////////Fin formulaire inscription/////////////////////////////////////////////////-->
+
 </body>
 </html>

@@ -1,0 +1,110 @@
+/*============================================================RECETTES==================================================================*/
+.global{
+  max-width: 1100px;
+    margin: 0 auto; 
+    font-family: "Montserrat";
+   
+    
+}
+.recette{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: #ff8ad46d dotted 10px;
+  padding: 20px;
+  line-height: 1.5rem;
+  
+}
+.global h1{
+ font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+padding: 20px;
+padding-top: 40px;
+font-family: "Dynapuff";
+letter-spacing: 3px;
+
+}
+.global h2,h3{
+  font-family: "Dynapuff";
+}
+
+.recette__div{
+  display: flex;
+  flex-direction: column;
+ flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+ 
+
+ 
+}
+.recette__image{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.recette__figure{
+ 
+    border-radius: 30px; 
+    border: 5px plum solid;
+    padding: 10px;
+    
+    
+ 
+}
+
+.recette__img{
+   width: 300px;
+  height: 250px;
+  border-radius: 15px;
+ 
+  
+}
+.recette__figcaption{
+  
+  text-align: center;
+  background-color: #ff9fdf; 
+  padding: 10px; 
+  border-radius: 15px; 
+  margin: -5px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.recette li{
+  list-style: none;
+  margin-left: -38px;
+  padding-left: 0;
+
+}
+.recette:nth-of-type(odd) .recette__image {
+  order: -1;
+ transform: rotate(-5deg);
+ transition: transform 1s cubic-bezier(0.02, 0.65, 0.66, 0.96);
+    
+}
+.recette:nth-of-type(even) .recette__image {
+  order: 1;
+  transform: rotate(5deg);
+  transition: transform 1s cubic-bezier(0.02, 0.65, 0.66, 0.96);
+ 
+}
+.recette:nth-of-type(even) .recette__image:hover {
+ transform: rotate(0deg);
+ 
+}
+.recette:nth-of-type(odd) .recette__image:hover {
+   transform: rotate(0deg);
+    
+}
+.bouton__home{
+   position: fixed;
+   top: 885px;
+  right: 15px;
+  transition: 1s;
+    
+}
+.bouton__home:hover{
+ color: #ff9fdf;
+  filter: contrast(150%);
+  filter: brightness(40);
+}
